@@ -5,7 +5,7 @@ records = [
 ]
 
 def find_record_with_most_points(records)
-  return records.max_by { |record| :points }
+  return records.max_by(1) { |record| :points }
 end
 
 puts find_record_with_most_points(records)
